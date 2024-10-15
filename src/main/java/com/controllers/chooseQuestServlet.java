@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 @WebServlet( urlPatterns = {"/choosingQuest"} )
@@ -21,10 +22,12 @@ public class chooseQuestServlet extends HttpServlet {
         {
             String redirectUrl = resp.encodeRedirectURL("/choosingQuest.jsp");
             resp.sendRedirect(redirectUrl);
+            HttpSession session = req.getSession();
+
         }
         else
         {
-            String redirectUrl = resp.encodeRedirectURL("/notauthrorized.jsp");
+            String redirectUrl = resp.encodeRedirectURL("notauthorized.jsp");
             resp.sendRedirect(redirectUrl);
         }
 

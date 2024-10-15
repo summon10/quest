@@ -2,8 +2,8 @@ package com.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class authCheck {
     private String password;
@@ -24,11 +24,16 @@ public class authCheck {
         else return false;
     }
     private static boolean credCheck(String username, String password) {
-        try (BufferedReader reader = Files.newBufferedReader((Path) authCheck.class.getResourceAsStream("resources/credentials.txt"))) {
+
+        try (InputStream fileReader = authCheck.class.getResourceAsStream("/credentials.txt");
+             InputStreamReader isr = new InputStreamReader(fileReader);
+             BufferedReader bf = new BufferedReader(isr);
+             )
+        {
             String tempLine;
-            while ((tempLine = reader.readLine()) != null) {
+            while ((tempLine = bf.readLine()) != null) {
                 if (tempLine.contains("username:" + username)) {
-                    if (reader.readLine().equals("password:" + password)) return true;
+                    if (bf.readLine().equals("password:" + password)) return true;
 
                 }
 

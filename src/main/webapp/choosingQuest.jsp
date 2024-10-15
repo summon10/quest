@@ -13,8 +13,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item" onclick = "window.location='/start?click=1'">
-              <a class="nav-link active" aria-current="page" href="#"> Small Shooter Quest</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quest"> Duke Nukem 1D</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>

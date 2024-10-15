@@ -6,8 +6,8 @@
     <title>You are not authorized</title>
 </head>
 <body>
-<h1> "You are not authorized" </h1>
-<button type="button" class="btn btn-secondary" action="/"> "Return"</button>
+<h1> You are not authorized </h1>
+<button type="button" class="btn btn-secondary" action="/"> Return </button>
 
 </body>
 </html>
