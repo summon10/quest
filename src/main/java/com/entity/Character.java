@@ -1,9 +1,35 @@
 package com.entity;
 
 public class Character {
-    Integer hp;
-   public static String name;
-    Integer armor;
+    public Integer getHp() {
+        return hp;
+    }
+
+    public void setHp(Integer hp) {
+        this.hp = hp;
+    }
+
+   private static Integer hp;
+
+    public  String getName() {
+        return name;
+    }
+
+    public  void setName(String name) {
+        Character.name = name;
+    }
+
+    private static String name;
+
+    public Integer getArmor() {
+        return armor;
+    }
+
+    public void setArmor(Integer armor) {
+        this.armor = armor;
+    }
+
+    private static Integer armor;
     private static volatile Character instance;
 
     private Character(Integer hp, Integer armor) {

@@ -1,32 +1,37 @@
 package com.entity;
 
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Gun {
-    private static volatile Gun instance;
-    public static HashMap<Integer,String> guns = new HashMap<>();
-    private Gun()
+    public Integer getDamage() {
+        return damage;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    Integer damage;
+    String name;
+    public Gun(String name, Integer damage) {
+        this.name = name;
+        this.damage = damage;
+    }
+
+    public static List<Gun> guns = new ArrayList<>();
+
+
+    public static void gunsInit()
     {
+       guns.add(new Gun("Pistol", 10 ));
+        guns.add(new Gun("Shotgun", 20 ));
+        guns.add(new Gun("Ripper",30));
+        guns.add(new Gun("RPG",40 ));
+        guns.add(new Gun("BFG",50));
+
 
     }
-    private static void gunsInit()
-    {
-       guns.put(10,"Pistol" );
-       guns.put(20, "Shotgun" );
-       guns.put(30, "Ripper");
-       guns.put(40,"RPG");
-       guns.put(50, "BFG");
-    }
-    public static Gun getInstance() {
-        if (instance == null) {
-            synchronized (Gun.class) {
-                if (instance == null) {
-                    instance = new Gun();
-                    gunsInit();
-                }
-            }
-        }
-        return instance;
-    }
+
 
 }

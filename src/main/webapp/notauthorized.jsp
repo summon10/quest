@@ -7,7 +7,8 @@
 </head>
 <body>
 <h1> You are not authorized </h1>
-<button type="button" class="btn btn-secondary" action="/"> Return </button>
+<form action="/index.jsp">
+<button class="btn btn-secondary"> Return </button>
 
 </body>
 </html>
