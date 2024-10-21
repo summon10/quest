@@ -20,9 +20,12 @@ public class chooseQuestServlet extends HttpServlet {
         authCheck auth = new authCheck(username,password);
         if (auth.resultOfAuth())
         {
+            HttpSession session = req.getSession();
+            session.setAttribute("Authorized", true);
             String redirectUrl = resp.encodeRedirectURL("/choosingQuest.jsp");
             resp.sendRedirect(redirectUrl);
-            HttpSession session = req.getSession();
+
+
 
         }
         else

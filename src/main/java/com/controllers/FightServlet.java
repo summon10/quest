@@ -33,5 +33,6 @@ public class FightServlet extends HttpServlet {
             resp.sendRedirect(redirectUrl);
         }
 
+
     }
 }

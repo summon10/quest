@@ -12,7 +12,7 @@
 <p>Current Character <%= session.getAttribute ("characterName")%><p>
 <p>Current HP <%= session.getAttribute ("characterHP")%><p>
 <p>Current Armor <%= session.getAttribute ("characterArmor")%><p>
-<img src=/images/dukenukem.jpg width="255" height="255">
+<img src=/images/monster.jpg>
 <h2><%= session.getAttribute("question")%></h2>
 <form action="/quest/fight" method=POST>
 <p><div class="form-check">

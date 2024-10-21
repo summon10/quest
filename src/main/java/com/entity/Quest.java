@@ -14,18 +14,20 @@ public class Quest {
     public static ArrayList<String> questions = new ArrayList<>();
     public static Map<Integer,String[]> answers;
 
-    private static void questionsInit() {
+    private static void questionsInit()  {
 
 
-            questions.add("You met a monster level. What will you do?");
-            questions.add("You picked up a first aid kit, +10 HP");
-            questions.add("You picked up a armor, your armor is full now");
-            questions.add("You found green door.  What will you do?");
-            questions.add("You found yellow door.  What will you do?");
-            questions.add("You found red door.  What will you do?");
-            questions.add("You picked up green card!");
-            questions.add("You picked up yellow card!");
-            questions.add("You picked up red card!");
+                questions.add("You met a monster. What will you do?");
+                questions.add("You picked up a first aid kit, +10 HP");
+                questions.add("You picked up a armor, your armor is full now");
+                questions.add("You found green door.  What will you do?");
+                questions.add("You found yellow door.  What will you do?");
+                questions.add("You found red door.  What will you do?");
+                questions.add("You picked up green card!");
+                questions.add("You picked up yellow card!");
+                questions.add("You picked up red card!");
+
+
 
     }
 

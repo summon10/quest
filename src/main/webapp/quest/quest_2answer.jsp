@@ -38,7 +38,7 @@
 <% if (session.getAttribute("green")== (Boolean) true) %> <script> document.getElementById("greencard").hidden = false; </script>
 <% if (session.getAttribute("red")== (Boolean) true) %> <script> document.getElementById('redcard').hidden = false; </script>
 <% if (session.getAttribute("yellow")==(Boolean) true) %> <script> document.getElementById('yellowcard').hidden = false; </script>
-<% if (session.getAttribute("alert")== (Integer) 1) %> <script> alert("You cannot to open this door!");document.getElementById('flexRadioDefault1').disabled = true; </script>
+<% if (session.getAttribute("alert")== (Integer) 1) %> <script> document.getElementById('flexRadioDefault1').disabled = true; </script>
 
 
 <% session.setAttribute("alert", (Integer) 0); %>

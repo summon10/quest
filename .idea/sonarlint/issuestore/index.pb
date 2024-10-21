@@ -66,9 +66,13 @@ U
 %src/main/webapp/quest/quest_fight.jsp,b\0\b065c36d63ba3862a3d5819bda4335fd5fa67b7d
 ^
 .src/main/java/com/controllers/CardServlet.java,0\6\06a405fc04b3ca31857c6e5bf46370c09572cbaf
-J
-src/main/webapp/quest/.css,e\9\e97348c6b8c714c47215f5c91584126275dc9e58
 N
 src/main/webapp/quest/card.css,0\4\04b6aa719fb1c0c2faf9885008e83daaf41fcf70
 ]
 -src/main/java/com/services/ColorExecutor.java,e\d\ed5060ed7c9c7379d2eb05314ece2e6979fafcc7
+L
+src/test/java/QuestTest.java,8\d\8d3d40edebee523acc716fcd5bf085be0d28e325
+S
+#src/test/java/FightServletTest.java,d\4\d48d11f0a5330051cb620d7f36e55308e6325204
+Y
+)src/main/java/com/filters/AuthFilter.java,c\2\c21572e1ee874246924ac11f3c10fe9645d0a8de
