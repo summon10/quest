@@ -12,8 +12,10 @@
     <title>Auth Page For Quests access</title>
 </head>
 <body>
+<div class="position-absolute top-50 start-50 translate-middle">
 <form action="/choosingQuest" method=POST>
 <label class="control label"> Authorization </label>
+
 <div class="row g-3 align-items-center">
   <div class="col-auto">
     <label for="inputUserName" class="col-form-label">User Name</label>
@@ -21,8 +23,8 @@
   <div class="col-auto">
     <input type="username" name="username" id="inputUserName" class="form-control" aria-describedby="passwordHelpInline">
   </div>
-
 </div>
+
 
 <div class="row align-items-center">
 
@@ -36,11 +38,14 @@
 
   <div class="col-auto">
     <span id="passwordHelpInline" class="form-text">
-      Must be 8-20 characters long.
+
     </span>
   </div>
+
 </div>
+
 <button type="submit" class="btn btn-success">Enter To Quests</button>
+</div>
 </form>
 </body>
 </html>

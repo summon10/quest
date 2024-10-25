@@ -1,0 +1,30 @@
+!com.entity.Quest
+answers: 
+   0: 
+   - Finish him with pistol
+   - Finish him with Shotgun
+   - Finish him with Ripper
+   - Finish him with RPG
+   - Finish him with BFG
+   - Run away
+   1: &1
+   - Great, Go Next Step
+   2: *1
+   3: &2
+   - Try To Open it with Card
+   - Run away
+   4: *2
+   5: *2
+   6: *1
+   7: *1
+   8: *1
+questions: 
+- You met a monster. What will you do?
+- You picked up a first aid kit, +10 HP
+- You picked up a armor, your armor is full now
+- You found green door.  What will you do?
+- You found yellow door.  What will you do?
+- You found red door.  What will you do?
+- You picked up green card!
+- You picked up yellow card!
+- You picked up red card!

@@ -8,6 +8,7 @@
     <title>Title</title>
 </head>
 <body>
+<div class="position-absolute top-50 start-50 translate-middle">
 <p><img src=/images/dead.gif></p>
 <form action="/quest/welcome.jsp">
 <button class="btn btn-secondary"> Try again </button>
@@ -19,6 +20,6 @@
 <% session.invalidate(); %>
 </form>
 </p>
-
+</div>
 </body>
 </html>

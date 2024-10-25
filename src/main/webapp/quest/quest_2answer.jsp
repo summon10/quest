@@ -10,6 +10,7 @@
     <title>Title</title>
 </head>
 <body>
+<div class="position-absolute top-50 start-50 translate-middle">
 <p>Current Character <%= session.getAttribute ("characterName")%><p>
 <p>Current HP <%= session.getAttribute ("characterHP")%><p>
 <p>Current Armor <%= session.getAttribute ("characterArmor")%><p>
@@ -42,5 +43,6 @@
 
 
 <% session.setAttribute("alert", (Integer) 0); %>
+</div>
 </body>
 </html>

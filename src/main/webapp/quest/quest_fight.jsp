@@ -9,6 +9,7 @@
     <title>Title</title>
 </head>
 <body>
+<div class="position-absolute top-50 start-50 translate-middle">
 <p>Current Character <%= session.getAttribute ("characterName")%><p>
 <p>Current HP <%= session.getAttribute ("characterHP")%><p>
 <p>Current Armor <%= session.getAttribute ("characterArmor")%><p>
@@ -65,5 +66,6 @@
 <% if (session.getAttribute("green")== (Boolean) true) %> <script> document.getElementById('greencard').hidden = false; </script>
 <% if (session.getAttribute("red")== (Boolean) true) %> <script> document.getElementById('redcard').hidden = false; </script>
 <% if (session.getAttribute("yellow")==(Boolean) true) %> <script> document.getElementById('yellowcard').hidden = false; </script>
+</div>
 </body>
 </html>

@@ -1,5 +1,8 @@
 package com.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,14 +11,14 @@ public class Quest {
 
     private Quest() {
     }
-
+    @JsonIgnore
     String description = "Shooter after Duke Nukem";
+    @JsonIgnore
     private static volatile Quest instance;
-    public static ArrayList<String> questions = new ArrayList<>();
-    public static Map<Integer,String[]> answers;
+    public  ArrayList<String> questions = new ArrayList<>();
+    public  Map<Integer,String[]> answers;
 
-    private static void questionsInit()  {
-
+    private  void questionsInit()  {
 
                 questions.add("You met a monster. What will you do?");
                 questions.add("You picked up a first aid kit, +10 HP");
@@ -27,11 +30,9 @@ public class Quest {
                 questions.add("You picked up yellow card!");
                 questions.add("You picked up red card!");
 
-
-
     }
 
-    private static void answersInit() {
+    private void answersInit() {
         answers = new HashMap<>(questions.size());
         String[] answerForMonster = {"Finish him with pistol", "Finish him with Shotgun","Finish him with Ripper",
                 "Finish him with RPG","Finish him with BFG", "Run away"};
@@ -52,13 +53,14 @@ public class Quest {
 
         }
 
-    public static Quest getInstance() {
+    public static Quest getInstance() throws IOException {
         if (instance == null) {
             synchronized (Quest.class) {
                 if (instance == null) {
                     instance = new Quest();
-                    questionsInit();
-                    answersInit();
+                   instance.questionsInit();
+                   instance.answersInit();
+
                 }
             }
         }

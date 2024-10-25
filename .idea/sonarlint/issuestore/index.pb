@@ -70,9 +70,17 @@ N
 src/main/webapp/quest/card.css,0\4\04b6aa719fb1c0c2faf9885008e83daaf41fcf70
 ]
 -src/main/java/com/services/ColorExecutor.java,e\d\ed5060ed7c9c7379d2eb05314ece2e6979fafcc7
-L
-src/test/java/QuestTest.java,8\d\8d3d40edebee523acc716fcd5bf085be0d28e325
 S
 #src/test/java/FightServletTest.java,d\4\d48d11f0a5330051cb620d7f36e55308e6325204
 Y
 )src/main/java/com/filters/AuthFilter.java,c\2\c21572e1ee874246924ac11f3c10fe9645d0a8de
+^
+.src/main/java/com/services/QuestProcessor.java,e\6\e6963c9213c724d83fe334be372b101a883f8e1a
+Z
+*src/main/java/com/services/Serializer.java,f\8\f8cf0df3e26f9cb6b4dc0c39d3c88341242896d4
+K
+src/test/java/GunsTest.java,1\c\1ce42d6c106166c6936caa1cbf31d68e4d1c08e5
+L
+src/test/java/FightTest.java,e\0\e08100086eacf1f00b375ac2c00120af69fc0af1
+=
+questions.txt,0\6\06a5bc92854551ecdb9fb9c670b44e4a7c8bc555
